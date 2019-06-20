@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>WEB POS SYSTEM</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="canonical" href="https://getbootstrap.com/docs/4.3/examples/dashboard/">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+
+    <!-- Custom styles for this template -->
+    <link href="css/dashboard.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/search-order.css">
+</head>
+<body>
+<nav class="navbar navbar-dark fixed-top bg-dark flex-md-nowrap p-0 shadow">
+    <a class="navbar-brand col-sm-3 col-md-2 mr-0" href="#">Company name</a>
+    <ul class="navbar-nav px-3">
+        <li class="nav-item text-nowrap">
+            <a class="nav-link" href="#">Sign out</a>
+        </li>
+    </ul>
+</nav>
+
+<div class="container-fluid">
+    <div class="row">
+        <nav class="col-md-2 d-none d-md-block bg-light sidebar">
+            <div class="sidebar-sticky">
+                <ul class="nav flex-column">
+                    <li class="nav-item">
+                        <a class="nav-link" href="dashboard.html">
+                            <span data-feather="home"><i class="fas fa-chalkboard"></i></span>
+                            Dashboard <span class="sr-only">(current)</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="manage-customer.html">
+                            <span data-feather="home"><i class="fas fa-users"></i></span>
+                            Manage Customer <span class="sr-only">(current)</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="manage-items.html">
+                            <span data-feather="file"><i class="fas fa-folder"></i></span>
+                            Manage Items
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="place-order.html">
+                            <span data-feather="shopping-cart"><i class="fas fa-shopping-basket"></i></span>
+                            Place Order
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">
+                            <span data-feather="users"><i class="fas fa-search"></i></span>
+                            Search Order
+                        </a>
+                    </li>
+                </ul>
+
+                <h6 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+                    <span>Saved reports</span>
+                    <a class="d-flex align-items-center text-muted" href="#">
+                        <span data-feather="plus-circle"><i class="fas fa-plus"></i></span>
+                    </a>
+                </h6>
+                <ul class="nav flex-column mb-2">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">
+                            <span data-feather="file-text"><i class="fas fa-file"></i></span>
+                            Customer Report
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">
+                            <span data-feather="file-text"><i class="fas fa-file"></i></span>
+                            Item Report
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">
+                            <span data-feather="file-text"><i class="fas fa-file"></i></span>
+                            Order Reports
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-4">
+            <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+                <h1 class="h2">Search Order</h1>
+            </div>
+
+            <div class="row" id="form-order-new">
+                <div class="col col-12">
+                    <div class="form-group">
+                        <label for="exampleInputSearch">Search</label>
+                        <input id="search" type="text" class="form-control" id="exampleInputSearch" aria-describedby="IDHelp" placeholder="Search...">
+                        <small id="emailHelp" class="form-text text-muted">Search IDs Names Orders.</small>
+                    </div>
+                </div>
+            </div>
+
+
+            <h2>Orders Items</h2>
+            <div class="table-responsive">
+                <table class="table table-striped table-sm">
+                    <thead>
+                    <tr>
+                        <th>Order ID</th>
+                        <th>Order Date</th>
+                        <th>Customer</th>
+                        <th>Total</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+
+                    </tbody>
+                </table>
+            </div>
+        </main>
+    </div>
+</div>
+
+
+<script src="js/jquery-3.4.1.min.js"></script>
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/database.js"></script>
+<script src="js/search-order.js"></script>
+</body>
+</html>
